@@ -1,0 +1,76 @@
+.hero-section {
+  background-size: cover;
+  margin-bottom: 24px;
+}
+
+.pic {
+  margin-bottom: 16px;
+}
+.webinar-info {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #0f7c41;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.webinar-free {
+  border: 0.4px solid #0f7c41;
+  padding: 4px 8px;
+}
+.webinar-time {
+  border: 0.4px solid #0f7c41;
+  padding: 4px 8px;
+}
+.bold-time {
+  font-weight: 700;
+}
+.hero-title {
+  padding-right: 60px;
+}
+.hero-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  height: 272px;
+}
+.text-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #010101;
+}
+.form-section {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 20px;
+  width: 280px;
+  box-shadow: 0 0 20px 0 rgba(15, 124, 65, 0.2);
+  background-color: #fff;
+}
+
+.call-to-action {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.4;
+  text-align: center;
+  color: #010101;
+}
+
+/* .text-description br {
+  display: none;
+} */

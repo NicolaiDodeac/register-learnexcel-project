@@ -1,0 +1,38 @@
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 222px;
+  height: 46px;
+  width: 222px;
+  height: 46px;
+}
+
+.timer-text {
+  font-weight: 600;
+  font-size: 8px;
+  text-align: center;
+  color: #010101;
+}
+.separator {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  text-align: right;
+  color: rgba(1, 1, 1, 0.2);
+}
+.timer-num {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  text-align: right;
+  color: #010101;
+}
+.seconds {
+  color: #0f7c41;
+}
+
+.timer {
+  text-align: center;
+}

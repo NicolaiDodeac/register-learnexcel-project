@@ -1,0 +1,54 @@
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-modal">&times;</span>
+    <div class="modal-header">
+      <h2 class="hero-title">Навчіться створювати Excel-таблиці на pro-рівні</h2>
+      Timer Partial Inclusion
+      <div class="timer-container">
+        <div class="countdown-timer" data-timer>
+          <div class="timer">
+            <span class="timer-num" data-days>00</span>
+            <span class="timer-text">днів</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="timer">
+            <span class="timer-num" data-hours>00</span>
+            <span class="timer-text">годин</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="timer">
+            <span class="timer-num" data-minutes>00</span>
+            <span class="timer-text">хвилин</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="timer">
+            <span class="timer-num seconds" data-seconds>00</span>
+            <span class="timer-text">секунд</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registration Form inside Modal -->
+    <form id="modal-registration-form" class="registration-form">
+      <label for="modal-name">Ім’я</label>
+      <input type="text" id="modal-name" name="name" placeholder="Введи своє ім’я" required />
+
+      <label for="modal-email">E-mail</label>
+      <input type="email" id="modal-email" name="email" placeholder="Введи свій E-mail" required />
+
+      <label for="modal-phone">Номер телефону</label>
+      <input type="tel" id="modal-phone" name="phone" placeholder="+380 95 -- -- ----" required />
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="modal-agreement" name="agreement" required />
+        <label for="modal-agreement">
+          Згоден з <a href="#">Політика конфеденційності</a> та
+          <a href="#">Умови користування послугами</a>
+        </label>
+      </div>
+
+      <button type="submit">Зареєструватися</button>
+    </form>
+  </div>
+</div>
