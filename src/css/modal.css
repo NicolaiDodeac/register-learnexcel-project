@@ -1,3 +1,4 @@
+/* Основні стилі для модального вікна */
 .modal {
   display: none;
   position: fixed;
@@ -8,37 +9,159 @@
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  position: relative;
-  max-width: 400px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
   width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.close-btn {
+/* Закриття модалки */
+.close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  top: 16px;
+  right: 16px;
+  font-size: 28px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+/* Логотип */
+.modal-header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 12px;
 }
 
-/* Responsive Design */
+/* Заголовок */
+.hero-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Таймер */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-num {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.timer-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.timer-num.seconds {
+  color: #0f7c41; /* Зелений колір для секунд */
+}
+
+.separator {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ccc;
+  margin: 0 4px;
+}
+
+/* Форма */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.registration-form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.registration-form input:focus {
+  border-color: #0f7c41;
+}
+
+/* Стилі для інпуту телефону */
+.registration-form input[type='tel'] {
+  background-image: url('../img/flag-ua.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 24px;
+  padding-left: 40px;
+}
+
+/* Чекбокс */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  accent-color: #0f7c41;
+}
+
+.checkbox-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+/* Кнопка */
+button {
+  background: #2e7d32;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
 @media (min-width: 768px) {
   .register-btn-mobile {
     display: none;
-  }
-
-  .modal {
-    display: none !important;
   }
 }
 

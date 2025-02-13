@@ -1,5 +1,5 @@
-export function startCountdown(timerId, targetDateStr) {
-  const countdownTimer = document.getElementById(timerId);
+export function startCountdown(timerClass, targetDateStr) {
+  const countdownTimers = document.querySelectorAll(`.${timerClass}`);
   const targetDate = new Date(targetDateStr).getTime();
 
   function formatNumber(num) {
@@ -12,24 +12,27 @@ export function startCountdown(timerId, targetDateStr) {
 
     if (distance < 0) {
       clearInterval(timerInterval);
-      countdownTimer.textContent = 'Час вийшов!';
+      countdownTimers.forEach(timer => (timer.textContent = 'Час вийшов!'));
       return;
     }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    const days = formatNumber(Math.floor(distance / (1000 * 60 * 60 * 24)));
+    const hours = formatNumber(
+      Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const minutes = formatNumber(
+      Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    );
+    const seconds = formatNumber(Math.floor((distance % (1000 * 60)) / 1000));
 
-    // Update the timer elements to always show two digits
-    document.getElementById('days').textContent = formatNumber(days);
-    document.getElementById('hours').textContent = formatNumber(hours);
-    document.getElementById('minutes').textContent = formatNumber(minutes);
-    document.getElementById('seconds').textContent = formatNumber(seconds);
+    countdownTimers.forEach(timer => {
+      timer.querySelector('#days').textContent = days;
+      timer.querySelector('#hours').textContent = hours;
+      timer.querySelector('#minutes').textContent = minutes;
+      timer.querySelector('#seconds').textContent = seconds;
+    });
   }
 
-  updateCountdown(); // Initial call so the user sees the timer immediately
+  updateCountdown();
   const timerInterval = setInterval(updateCountdown, 1000);
 }
