@@ -1,40 +1,32 @@
-a {
+/* a {
   color: #007bff;
   text-decoration: none;
-}
+} */
 
-button {
+/* button {
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
+} */
 
-input[type='text'],
+/* input[type='text'],
 input[type='email'],
-input[type='tel'] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+input[type='tel'] { */
+/* padding: 10px; */
+/* border: 1px solid #ccc; */
+/* border-radius: 4px;
   font-size: 16px;
-  width: 100%;
-}
+  width: 100%; */
 
-input:focus {
+/* input:focus {
   border-color: #007bff;
   outline: none;
-}
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-}
+} */
 
 /* button {
   background-color: #007bff;
@@ -46,18 +38,3 @@ input:focus {
   font-size: 16px;
   transition: background-color 0.3s ease;
 } */
-.register-btn-mobile {
-  border: none;
-  /* padding: 20px 24px; */
-  width: 236px;
-  height: 56px;
-  background-color: #0f7c41;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-}
-button:hover {
-  background-color: #0056b3;
-}

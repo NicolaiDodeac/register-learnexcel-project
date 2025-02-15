@@ -1,41 +1,37 @@
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close" id="close-modal">&times;</span>
     <div class="modal-header">
-      <img class="pic" src="img/logo.png" alt="GoIT logo" width="100" height="30" />
-      <h2 class="hero-title">Навчіться створювати Excel-таблиці на pro-рівні</h2>
-      <div class="countdown-timer" id="countdown-timer">
-        <div class="timer">
-          <span class="timer-num" id="days">00</span>
-          <span class="timer-text">днів</span>
-        </div>
-        <span class="separator">:</span>
-        <div class="timer">
-          <span class="timer-num" id="hours">00</span>
-          <span class="timer-text">годин</span>
-        </div>
-        <span class="separator">:</span>
-        <div class="timer">
-          <span class="timer-num" id="minutes">00</span>
-          <span class="timer-text">хвилин</span>
-        </div>
-        <span class="separator">:</span>
-        <div class="timer">
-          <span class="timer-num seconds" id="seconds">00</span>
-          <span class="timer-text">секунд</span>
-        </div>
+      <img class="picmod" src="img/logo.png" alt="GoIT logo" width="100" height="30" />
+      <img class="close" id="close-modal" src="../img/Icon.png">
+    </div>
+    <h2 class="call-to-action">Реєструйся просто зараз</h2>
+    <div class="countdown-timer" id="countdown-timer">
+      <div class="timer">
+        <span class="timer-num" id="days">00</span>
+        <span class="timer-text">днів</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="hours">00</span>
+        <span class="timer-text">годин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="minutes">00</span>
+        <span class="timer-text">хвилин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num seconds" id="seconds">00</span>
+        <span class="timer-text">секунд</span>
       </div>
     </div>
 
-    <!-- Registration Form inside Modal -->
     <form id="modal-registration-form" class="registration-form">
-      <label for="modal-name">Ім’я</label>
       <input type="text" id="modal-name" name="name" placeholder="Введи своє ім’я" required />
 
-      <label for="modal-email">E-mail</label>
       <input type="email" id="modal-email" name="email" placeholder="Введи свій E-mail" required />
 
-      <label for="modal-phone">Номер телефону</label>
       <input type="tel" id="modal-phone" name="phone" placeholder="+380 95 -- -- ----" required />
 
       <div class="checkbox-container">
@@ -46,7 +42,6 @@
         </label>
       </div>
 
-      <button type="submit">Зареєструватися</button>
+      <button type="submit" class="register-btn register-btn-modal">Зареєструватися</button>
     </form>
   </div>
-</div>
