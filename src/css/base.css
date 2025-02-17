@@ -20,7 +20,7 @@ h1 {
   }
   .container-hero {
     display: flex;
-    gap: 104px;
-    /* padding: 0 112px; */
+    justify-content: space-around;
+    /* max-width: 1216px; */
   }
 }
