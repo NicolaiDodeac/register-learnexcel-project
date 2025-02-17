@@ -11,10 +11,122 @@
 </head>
 
 <body>
-  <load src="./partials/hero.html" icon-path="img/sprite.svg#logo" />
+  <div class="container-hero">
+  <section class="hero-section">
+    <img class="pic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7VqLcdswDIV0HcDdQJ2g7gRVJ4gyQTSCu0E6gZoJ4kwQd4LKE9SdwNqgmsAuYEMugxMdkG4SQad3x5MJEfyBeCApJ0mS7MEQ9vv9V3x815a3Nr7EWocJaJRP+NhoylobXwoGgZP8iI8MRgiTHsLYsKecxeQhr4c5pgpGBssGodW/wMcCRgTLlHXCuSA/UdYbYExBPtZDfuCqXMLTVZmlaVqi/DOcn5w169aObI66BcpvIB69QT5yfA3W9aXLcN9O8Qp/f9BWhO3TmelKW/7Q4YC0hWMwPYeMVqxHN1fobgP7dErQE+Qj69qKakrRTgiWIW2HUFa3ajaKcg8e3Vqhqz70SYwhyL/TFuQri8YRzTAVcKQnmsAVy2mV3wvdb0KXkLMuyWtH3mL5655VqgLqVahfQ6RRlbh1frfw9ConB4cJsD8fIQRKV6qFWh+1HCjJI5eoespkol+rWOpy67tA30UZUPb2gn7rKAtX3Eo2ygNusZIHTmsK6vSkPLBH9BizZGpx0edVss0QHOIYGISWsho347hhu9vtSo8OBbMM3/8W8sJTXm4WargMJk/yseeQ9xCP1iOfPZMPBnpsAsagNUjmZgSdZJxmGl3wB9u1yF9qkA16p7kdl8ogSD3yYEO7igb+BXcKbJVH96ZHVxqFdlalkMl8CGj7fA0GoY0hORw5uZvI7lxB8gyONLT06NJKL933fNYokVJyXMXdlrlxdLIeQ6rBxmjAIgK2ZL8gjEbcbesfCLtreozeNqbpInJ8dra9jDkq/FRMLBmtEjQ3C9C9x7IFRAD17tDj1N/bh4iErAJhaDmo01mD6IboKuNUMNV4PYkvFkm3dsREh1d8PokN5v/zcpHGeOfUQdv8QlmWLldziEQS2eGhoYtpjXxhbXyjMMj0gWpAwAmnS8+XvEh8VVj/pm4+iEtYpqzpb0ADgtmT+HMw6SHTX0kHhLEFcYm/q3XT27axA4MAAAAASUVORK5CYII=" alt="GoIT logo" width="100" height="30" />
+    <div class="webinar-info">
+      <p class="webinar-time">Безоплатний вебінар</p>
+      <p class="webinar-time">
+        Старт:
+        <span class="bold-time">10 січня 19:30</span>
+      </p>
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Навчіться створювати Excel-таблиці на pro-рівні
+      </h1>
+      <p class="text-description">
+        Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу <br class="gap" />
+        та створюйте таблиці швидко <br />
+        і в задоволення
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2 class="call-to-action">Реєструйся просто зараз</h2>
+
+    <div class="countdown-timer" id="countdown-timer">
+      <div class="timer">
+        <span class="timer-num" id="days">00</span>
+        <span class="timer-text">днів</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="hours">00</span>
+        <span class="timer-text">годин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="minutes">00</span>
+        <span class="timer-text">хвилин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num seconds" id="seconds">00</span>
+        <span class="timer-text">секунд</span>
+      </div>
+    </div>
+
+    <form id="registration-form" class="registration-form">
+      <input class="input-name" type="text" id="name" name="name" placeholder="Введи своє ім’я" required />
+
+      <input class="input-name" type="email" id="email" name="email" placeholder="Введи свій E-mail" required />
+
+      <input class="input-name" type="tel" id="phone" name="phone" placeholder="+380 95 -- -- ----" required />
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="agreement" name="agreement" required />
+        <label for="agreement">
+          Згоден з
+          <a href="#">Політика конфеденційності</a> та
+          <a href="#">Умови користування послугами</a>
+        </label>
+      </div>
+    </form>
+
+    <button id="open-modal" class="register-btn">Зареєструватися</button>
+  </section>
+</div>
 
   <main>
-    <load src="./partials/modal.html" />
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <img class="picmod" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7VqLcdswDIV0HcDdQJ2g7gRVJ4gyQTSCu0E6gZoJ4kwQd4LKE9SdwNqgmsAuYEMugxMdkG4SQad3x5MJEfyBeCApJ0mS7MEQ9vv9V3x815a3Nr7EWocJaJRP+NhoylobXwoGgZP8iI8MRgiTHsLYsKecxeQhr4c5pgpGBssGodW/wMcCRgTLlHXCuSA/UdYbYExBPtZDfuCqXMLTVZmlaVqi/DOcn5w169aObI66BcpvIB69QT5yfA3W9aXLcN9O8Qp/f9BWhO3TmelKW/7Q4YC0hWMwPYeMVqxHN1fobgP7dErQE+Qj69qKakrRTgiWIW2HUFa3ajaKcg8e3Vqhqz70SYwhyL/TFuQri8YRzTAVcKQnmsAVy2mV3wvdb0KXkLMuyWtH3mL5655VqgLqVahfQ6RRlbh1frfw9ConB4cJsD8fIQRKV6qFWh+1HCjJI5eoespkol+rWOpy67tA30UZUPb2gn7rKAtX3Eo2ygNusZIHTmsK6vSkPLBH9BizZGpx0edVss0QHOIYGISWsho347hhu9vtSo8OBbMM3/8W8sJTXm4WargMJk/yseeQ9xCP1iOfPZMPBnpsAsagNUjmZgSdZJxmGl3wB9u1yF9qkA16p7kdl8ogSD3yYEO7igb+BXcKbJVH96ZHVxqFdlalkMl8CGj7fA0GoY0hORw5uZvI7lxB8gyONLT06NJKL933fNYokVJyXMXdlrlxdLIeQ6rBxmjAIgK2ZL8gjEbcbesfCLtreozeNqbpInJ8dra9jDkq/FRMLBmtEjQ3C9C9x7IFRAD17tDj1N/bh4iErAJhaDmo01mD6IboKuNUMNV4PYkvFkm3dsREh1d8PokN5v/zcpHGeOfUQdv8QlmWLldziEQS2eGhoYtpjXxhbXyjMMj0gWpAwAmnS8+XvEh8VVj/pm4+iEtYpqzpb0ADgtmT+HMw6SHTX0kHhLEFcYm/q3XT27axA4MAAAAASUVORK5CYII=" alt="GoIT logo" width="100" height="30" />
+      <img class="close" id="close-modal" src="../img/Icon.png">
+    </div>
+    <h2 class="call-to-action">Реєструйся просто зараз</h2>
+    <div class="countdown-timer" id="countdown-timer">
+      <div class="timer">
+        <span class="timer-num" id="days">00</span>
+        <span class="timer-text">днів</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="hours">00</span>
+        <span class="timer-text">годин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num" id="minutes">00</span>
+        <span class="timer-text">хвилин</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="timer">
+        <span class="timer-num seconds" id="seconds">00</span>
+        <span class="timer-text">секунд</span>
+      </div>
+    </div>
+
+    <form id="modal-registration-form" class="registration-form">
+      <input type="text" id="modal-name" name="name" placeholder="Введи своє ім’я" required />
+
+      <input type="email" id="modal-email" name="email" placeholder="Введи свій E-mail" required />
+
+      <input type="tel" id="modal-phone" name="phone" placeholder="+380 95 -- -- ----" required />
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="modal-agreement" name="agreement" required />
+        <label for="modal-agreement">
+          Згоден з <a href="#">Політика конфеденційності</a> та
+          <a href="#">Умови користування послугами</a>
+        </label>
+      </div>
+
+      <button type="submit" class="register-btn register-btn-modal">Зареєструватися</button>
+    </form>
+  </div>
   </main>
 
 </body>
