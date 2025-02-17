@@ -13,3 +13,14 @@ h1 {
   font-size: 32px;
   line-height: 1.25;
 }
+@media (min-width: 768px) {
+  body {
+    background: url('../img/BG.png') no-repeat;
+    padding: 20px;
+  }
+  .container-hero {
+    display: flex;
+    gap: 104px;
+    padding: 0 112px;
+  }
+}

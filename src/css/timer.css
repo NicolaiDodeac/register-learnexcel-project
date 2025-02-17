@@ -32,3 +32,14 @@
   display: grid;
   justify-items: center;
 }
+
+@media (min-width: 768px) {
+  .countdown-timer {
+    margin-bottom: 0;
+  }
+  .timer-num,
+  .separator {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+}

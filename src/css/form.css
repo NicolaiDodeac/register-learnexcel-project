@@ -1,40 +1,115 @@
-/* a {
+.form-section {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 20px;
+  width: 280px;
+  box-shadow: 0 0 20px 0 rgba(15, 124, 65, 0.2);
+  background-color: #fff;
+}
+
+.call-to-action {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.4;
+  text-align: center;
+  color: #010101;
+}
+.registration-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-name {
+  padding: 12px 16px;
+  background: #f2f4fa;
+  width: 288px;
+  border: none;
+}
+
+.input-name:focus {
+  border-color: #0f7c41;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #010101;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  accent-color: #0f7c41;
+}
+
+.checkbox-container a {
   color: #007bff;
   text-decoration: none;
-} */
+}
 
-/* button {
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
 
-/* form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-} */
-
-/* input[type='text'],
-input[type='email'],
-input[type='tel'] { */
-/* padding: 10px; */
-/* border: 1px solid #ccc; */
-/* border-radius: 4px;
-  font-size: 16px;
-  width: 100%; */
-
-/* input:focus {
-  border-color: #007bff;
-  outline: none;
-} */
-
-/* button {
-  background-color: #007bff;
-  color: white;
-  padding: 12px;
+.register-btn {
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 236px;
+  height: 56px;
+  background-color: #0f7c41;
+  font-weight: 700;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-} */
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+.register-btn-modal {
+  width: 320px;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+@media (min-width: 768px) {
+  .form-section {
+    margin-top: 110px;
+    gap: 24px;
+    padding: 52px;
+    width: 466px;
+    height: 580px;
+    display: flex;
+  }
+  .call-to-action {
+    font-size: 28px;
+  }
+  .registration-form {
+    justify-content: center;
+    align-items: center;
+  }
+  .input-name {
+    width: 328px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #767b8e;
+  }
+  .checkbox-container {
+    padding-right: 80px;
+  }
+  .register-btn {
+    border: none;
+    width: 358px;
+    height: 120px;
+  }
+}
