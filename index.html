@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Реєстраційна форма</title>
   <script type="module" crossorigin src="/register-learnexcel-project/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/register-learnexcel-project/assets/index-BwN4TGh6.css">
+  <link rel="stylesheet" crossorigin href="/register-learnexcel-project/assets/index-N4Ofmo2e.css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <form id="registration-form" class="registration-form">
+    <form id="registration-form" class="registration-form form-hero">
       <input class="input-name" type="text" id="name" name="name" placeholder="Введи своє ім’я" required />
 
       <input class="input-name" type="email" id="email" name="email" placeholder="Введи свій E-mail" required />
@@ -73,10 +73,9 @@
           <a href="#">Умови користування послугами</a>
         </label>
       </div>
+      <button type="submit" class="register-btn register-btn-submit">Зареєструватися</button>
+      <button id="open-modal" class="register-btn register-btn-open">Зареєструватися</button>
     </form>
-
-    <button id="open-modal" class="register-btn">Зареєструватися</button>
-  </section>
 </div>
 
   <main>
@@ -110,11 +109,11 @@
     </div>
 
     <form id="modal-registration-form" class="registration-form">
-      <input type="text" id="modal-name" name="name" placeholder="Введи своє ім’я" required />
+      <input class="input-name" type="text" id="modal-name" name="name" placeholder="Введи своє ім’я" required />
 
-      <input type="email" id="modal-email" name="email" placeholder="Введи свій E-mail" required />
+      <input class="input-name" type="email" id="modal-email" name="email" placeholder="Введи свій E-mail" required />
 
-      <input type="tel" id="modal-phone" name="phone" placeholder="+380 95 -- -- ----" required />
+      <input class="input-name" type="tel" id="modal-phone" name="phone" placeholder="+380 95 -- -- ----" required />
 
       <div class="checkbox-container">
         <input type="checkbox" id="modal-agreement" name="agreement" required />
