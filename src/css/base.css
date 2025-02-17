@@ -21,6 +21,5 @@ h1 {
   .container-hero {
     display: flex;
     justify-content: space-around;
-    /* max-width: 1216px; */
   }
 }

@@ -26,15 +26,3 @@
   font-weight: bold;
   cursor: pointer;
 }
-
-@media (min-width: 768px) {
-  .register-btn-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  #registration-form {
-    display: none;
-  }
-}
