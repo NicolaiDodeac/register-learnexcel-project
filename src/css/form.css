@@ -10,6 +10,17 @@
   box-shadow: 0 0 20px 0 rgba(15, 124, 65, 0.2);
   background-color: #fff;
 }
+.phone-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f4fa;
+  padding-left: 16px;
+  gap: 8px;
+}
+.phone-input input {
+  padding: 12px 0;
+}
 
 .call-to-action {
   font-weight: 700;
