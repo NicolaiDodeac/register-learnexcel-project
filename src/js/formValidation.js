@@ -1,5 +1,6 @@
 export function handleFormSubmit(formId) {
   const form = document.getElementById(formId);
+  // const modal = document.getElementById(modalId);
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -50,6 +51,10 @@ export function handleFormSubmit(formId) {
       } catch (error) {
         console.error('Помилка:', error);
         alert('Помилка мережі. Перевірте підключення до Інтернету.');
+        form.reset();
+        if (modal) {
+          modal.style.display = 'none';
+        }
       }
     }
   });
