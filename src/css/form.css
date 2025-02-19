@@ -87,6 +87,7 @@
   text-align: center;
   color: #fff;
 }
+
 .register-btn-modal {
   width: 320px;
   margin-top: 12px;
@@ -95,9 +96,6 @@
   display: none;
 }
 
-.register-btn-submit {
-  /* display: flex; */
-}
 button:hover {
   background: #1b5e20;
 }
